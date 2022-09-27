@@ -17,7 +17,9 @@ export default function HomePage() {
   return (
     <div className="home container ">
       <div className="py-5">
-        <h2 className="border-bottom text-primary pb-3">Product List</h2>
+        <h2 className="border-bottom fw-bold text-primary pb-3">
+          Product List
+        </h2>
       </div>
       <div className="row">
         {data.map((v, i) => {

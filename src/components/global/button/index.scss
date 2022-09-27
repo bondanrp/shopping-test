@@ -25,15 +25,16 @@
     background-color: $primary;
     color: $white;
     &:hover{
-      background-color: $border;
+      background-color: lighten($primary, 2%);
+      color: $white;
     }
     &.is-outlined{
-     background:rgba($primary,0.1);
-     border: 1px solid $primary;
-     color: $primary; 
-     &:hover{
-       background-color: $primary;
-       color: black;
+      background:rgba($primary,0.1);
+      border: 1px solid $primary;
+      color: $primary; 
+      &:hover{
+       background-color: lighten($primary, 2%);
+       color: $white;
      }
     }
   }
@@ -53,7 +54,7 @@
   
   &.is-secondary{
     background-color: $secondary;
-    color: black;
+    color: $primary;
     &.is-outlined{
      background:none;
      border: 1px solid $secondary;

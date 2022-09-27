@@ -1,9 +1,63 @@
-.list-item{
+.list-item, .item-modal{
     img, .no-item{
+        border: 1px solid $border;
+        width: 100%;
         background-color: $white;
         opacity: 1;
+        border-radius: 2px;
         height: 100%;
         background: radial-gradient(circle, transparent 20%, $white 20%, $white 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, $white 20%, $white 80%, transparent 80%, transparent) 25px 25px, linear-gradient($secondary 2px, transparent 2px) 0 -1px, linear-gradient(90deg, $secondary 2px, $white 2px) -1px 0;
         background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+    }
+    &__sizes{
+        display: flex;
+        flex-wrap: wrap;
+        &__item{
+            background: none;
+            margin-right: 20px;
+            border: 1px dashed $border;
+            padding: 2px 15px;
+            &.-active{
+                border: 1px solid $black;
+            }
+        }
+    }
+    .carousel{
+        &__selected{
+            height: 350px;
+            object-fit: contain;
+        }
+        &__info{
+            background: $background;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            button{
+                border: none;
+                background: none;
+            }
+        }
+        &__options{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            h3{
+                font-size: 8px;
+            }
+            button{
+                border: none;
+                padding: 0;
+                width: 70px;
+                height:70px;
+                &.-active{
+                    border: 1px solid $black;
+                }
+            }
+        }
     }
 }

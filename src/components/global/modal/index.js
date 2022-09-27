@@ -8,12 +8,14 @@ import "./index.scss";
 
 const customStyles = {
   content: {
-    minWidth: "600px",
+    maxWidth: "800px",
     top: "50%",
     left: "50%",
     right: "auto",
     bottom: "auto",
+    width: "100%",
     marginRight: "-50%",
+    maxHeight: "100vh",
     transform: "translate(-50%, -50%)",
   },
   overlay: {
@@ -37,7 +39,7 @@ export default function Modal() {
       onRequestClose={handleClose}
       shouldCloseOnOverlayClick={true}
     >
-      <div className="modal__container">
+      <div className="modal__container container w-100">
         <div onClick={handleClose} className="modal__close pointer">
           <FontAwesomeIcon icon={faXmark} />
         </div>
