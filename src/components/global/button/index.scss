@@ -1,0 +1,98 @@
+
+.button-component {
+  background: $border;
+  border: none;
+  outline: none;
+  border-radius: $br;
+  height: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0 20px;
+  &.is-outlined{
+   background:none;
+   border: 1px solid $sub;
+   color: $sub;
+   &:hover{
+    color:$secondary;
+    border:1px solid $secondary
+   }
+  }
+  &.is-block{
+    display: block;
+  }
+  &.is-primary{
+    background-color: $primary;
+    color: $white;
+    &:hover{
+      background-color: $border;
+    }
+    &.is-outlined{
+     background:rgba($primary,0.1);
+     border: 1px solid $primary;
+     color: $primary; 
+     &:hover{
+       background-color: $primary;
+       color: black;
+     }
+    }
+  }
+  &.is-white{
+    background-color: none;
+    color: #fff;
+    &.is-outlined{
+     background:none;
+     border: 1px solid #fff;
+     color: #fff; 
+     &:hover{
+       background:#fff;
+       color:#000;
+     }
+    }
+  }
+  
+  &.is-secondary{
+    background-color: $secondary;
+    color: black;
+    &.is-outlined{
+     background:none;
+     border: 1px solid $secondary;
+     color: $secondary; 
+     &:hover{
+       background-color: $secondary;
+       color: $white;
+     }
+    }
+  }
+  &.is-danger{
+    background-color: $danger;
+    color: black;
+    &.is-outlined{
+     background:none;
+     border: 1px solid $danger;
+     color: $danger; 
+     &:hover{
+       background-color: $danger;
+       color: black;
+     }
+    }
+  }
+  &:disabled{
+    background: $border;
+    color: $sub
+  }
+  &.is-outlined{
+    &:disabled{
+      border: 2px solid $border;
+      color:$sub;
+      background: none;
+      &:hover{
+        background: none;
+        border: 2px solid $border ;
+        color:$sub ;
+      }
+    }
+  }
+  
+
+}

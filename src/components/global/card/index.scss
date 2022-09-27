@@ -1,0 +1,11 @@
+.card{
+    background: $white;
+    border-radius: $br;
+    padding: 20px;
+ 
+    &__header {
+        padding:20px;
+        padding-bottom: 0px;
+        color: $primary;
+    }
+}

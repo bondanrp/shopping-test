@@ -1,0 +1,30 @@
+.input{
+    height: 30px;
+    padding: 0 10px;
+    width: 100%;
+    border: 1px solid $border ;
+    border-radius: $br;
+    background: $white;
+    &:disabled, &.-disabled{
+        background:$disabled
+    }
+}
+.textarea{
+    display: block;
+    width: 100%;
+    border: 1px solid $border ;
+    border-radius: 2px;
+    background: $white;
+    &:disabled{
+        background:$disabled
+    }
+}
+.input-container{
+    position: relative;
+    &__icon{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
