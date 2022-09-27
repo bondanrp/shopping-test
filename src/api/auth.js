@@ -9,6 +9,14 @@ const authControllers = {
       throw error;
     }
   },
+  register: async (body) => {
+    try {
+      let result = await publicApi.post(`/register`, body);
+      return result;
+    } catch (error) {
+      throw error;
+    }
+  },
 
   logout: async (params) => {
     try {

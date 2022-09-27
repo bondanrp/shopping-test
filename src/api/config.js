@@ -1,6 +1,6 @@
 const { default: axios } = require("axios");
 const { default: store } = require("../redux/store");
-const serverUrl = "https://fe.dev.dxtr.asia/api";
+const serverUrl = process.env.REACT_APP_API_BASE_URL;
 
 const securedApi = axios.create({
   baseURL: `${serverUrl}`,
