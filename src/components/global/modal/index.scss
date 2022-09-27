@@ -1,0 +1,10 @@
+.modal{
+    &__container{
+        position: relative;
+    }
+    &__close{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

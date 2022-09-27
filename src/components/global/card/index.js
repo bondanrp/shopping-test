@@ -11,6 +11,7 @@ export default function Card(props) {
     <div
       style={{ ...props.style, height: props.height, width: props.width }}
       className={`card ${getClass(props)}`}
+      onClick={props.onClick}
     >
       {props.header && (
         <>

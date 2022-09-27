@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import userReducer from "../reducer/user";
+import modalReducer from "../reducer/modal";
 
 const localStorageMiddleware = ({ getState }) => {
   return (next) => (action) => {
@@ -18,6 +19,7 @@ const reHydrateStore = () => {
 export default configureStore({
   reducer: {
     user: userReducer,
+    modal: modalReducer,
   },
   preloadedState: reHydrateStore(),
   middleware: (getDefaultMiddleware) =>

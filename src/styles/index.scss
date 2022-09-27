@@ -1,3 +1,4 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
 @import './custom.scss';
 
 body {
@@ -11,10 +12,11 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 .App{
+  background: $secondary;
   min-height: 100vh;
 }
 
